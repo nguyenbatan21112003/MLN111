@@ -60,6 +60,8 @@ export default function ModelWithChat({
             loop
             muted
             playsInline
+            disablePictureInPicture
+            controlsList="nodownload nofullscreen noremoteplayback"
             style={{
               width: "100%",
               height: "100%",

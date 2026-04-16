@@ -13,43 +13,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const timelineData = [
-  {
-    year: "Mục 1",
-    title: "Bản chất của con người và vai trò của lao động",
-    slug: "ban-chat-con-nguoi-va-lao-dong",
-    description:
-      "Khám phá quan niệm triết học về bản chất con người và vai trò quyết định của lao động trong sự hình thành chân giá trị.",
-  },
-  {
-    year: "Mục 2",
-    title: "Hiện tượng tha hóa con người và tha hóa lao động",
-    slug: "tha-hoa-con-nguoi-va-lao-dong",
-    description:
-      "Phân tích sự tha hóa của lao động trong xã hội tư bản và hệ quả đối với sự phát triển tự nhiên của con người.",
-  },
-  {
-    year: "Mục 3",
-    title: "Vấn đề giải phóng con người",
-    slug: "giai-phong-con-nguoi",
-    description:
-      "Mục tiêu cốt lõi của triết học Marx-Lenin trong việc xóa bỏ áp bức và hướng tới sự tự do hoàn toàn.",
-  },
-  {
-    year: "Mục 4",
-    title: 'Lập luận "Đi làm để sống"',
-    slug: "di-lam-de-song",
-    description:
-      "Góc nhìn về lao động như một phương tiện tất yếu để duy trì sự tồn tại và đáp ứng các nhu cầu thiết yếu.",
-  },
-  {
-    year: "Mục 5",
-    title: 'Lập luận "Sống để đi làm"',
-    slug: "song-de-di-lam",
-    description:
-      "Lao động như một nhu cầu tự thân, là nơi con người tìm thấy ý nghĩa cuộc sống và khẳng định giá trị bản thân.",
-  },
-];
+import { timelineData } from "@/data/timelineData";
 
 export default function HoChiMinhTimeline() {
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -360,7 +324,7 @@ export default function HoChiMinhTimeline() {
                 className={`relative flex items-center ${
                   // Desktop: alternating left/right, Mobile: all left-aligned
                   "md:" + (index % 2 === 0 ? "justify-start" : "justify-end")
-                }`}
+                  }`}
               >
                 {/* Timeline Dot */}
                 {/* <div className="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full timeline-dot z-10 border-4 border-white shadow-xl"></div> */}
@@ -372,7 +336,7 @@ export default function HoChiMinhTimeline() {
                     "md:" +
                     (index % 2 === 0 ? "translate-x-20" : "-translate-x-28") +
                     " -translate-y-12 md:translate-y-0"
-                  } text-lg md:text-xl font-bold z-20 font-playfair text-yellow-300 bg-red-800/80 px-3 py-1 rounded-lg backdrop-blur-sm border border-yellow-400/30`}
+                    } text-lg md:text-xl font-bold z-20 font-playfair text-yellow-300 bg-red-800/80 px-3 py-1 rounded-lg backdrop-blur-sm border border-yellow-400/30`}
                 >
                   {item.year}
                 </div>
@@ -384,7 +348,7 @@ export default function HoChiMinhTimeline() {
                     // Desktop: max-width and positioning, Mobile: full width with left margin
                     "md:max-w-lg ml-20 md:ml-0 " +
                     (index % 2 === 0 ? "md:mr-auto" : "md:ml-auto")
-                  }`}
+                    }`}
                 >
                   <Card className="timeline-card w-full shadow-2xl hover:shadow-red-500/25 transition-all duration-500 border border-red-200/50 bg-white/95 backdrop-blur-sm hover:scale-105 md:hover:scale-105 hover:scale-[1.02] cursor-pointer group overflow-hidden">
                     <CardContent className="p-6 md:p-8">
@@ -440,11 +404,11 @@ export default function HoChiMinhTimeline() {
         <div className="absolute inset-0 bg-amber-100"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <blockquote className="text-3xl md:text-4xl font-semibold text-red-700 mb-8 text-balance italic leading-relaxed font-crimson">
-            "Không có gì quý hơn độc lập tự do"
+            "Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người"
           </blockquote>
 
           <cite className="text-xl text-red-600 font-medium font-inter">
-            — Chủ tịch Hồ Chí Minh —
+            — Karl Marx —
           </cite>
         </div>
       </section>
@@ -473,7 +437,7 @@ export default function HoChiMinhTimeline() {
               </svg>
             </div>
             <div className="absolute -top-12 left-0 bg-gray-800 text-white text-sm px-3 py-1 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Chơi game xếp hình
+              Chơi game
             </div>
           </div>
         </Link>

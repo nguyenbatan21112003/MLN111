@@ -1,10 +1,8 @@
-"use client";
-
-import { useState, useRef } from "react";
-import { Send } from "lucide-react";
-import { createChatSession } from "@/services/chat.api";
-import { refreshTokenIfNeeded } from "@/services/token.api";
-import { ChatSession } from "@/types/chat.type";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Send, Search, ArrowRight, X } from "lucide-react";
+import { timelineData, TimelineItem } from "@/data/timelineData";
+import { normalizeVietnamese, containsKeyword } from "@/utils/text";
 
 interface SimpleChatProps {
   isOpen: boolean;
@@ -13,114 +11,115 @@ interface SimpleChatProps {
 
 export default function SimpleChat({ isOpen, onClose }: SimpleChatProps) {
   const [inputValue, setInputValue] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
-  const [sessionId, setSessionId] = useState<string>("");
-  const [isInitialized, setIsInitialized] = useState(false);
-  const [isInitializing, setIsInitializing] = useState(false);
+  const [searchResults, setSearchResults] = useState<TimelineItem[]>([]);
+  const router = useRouter();
 
-  // Generate session ID
-  const generateSessionId = () => {
-    return `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-  };
-
-  // Initialize chat session
-  const initializeChat = async () => {
-    setIsInitializing(true);
-
-    try {
-      console.log("🔑 Authenticating user...");
-      await refreshTokenIfNeeded();
-
-      // Create session
-      const newSessionId = generateSessionId();
-      setSessionId(newSessionId);
-
-      const chatSession: ChatSession = {
-        sessionId: newSessionId,
-        chatInput: "",
-      };
-
-      await createChatSession(chatSession);
-      setIsInitialized(true);
-      console.log("✅ Chat initialized successfully");
-    } catch (error: any) {
-      console.error("❌ Chat initialization failed:", error);
-    } finally {
-      setIsInitializing(false);
+  const performSearch = (query: string) => {
+    const q = query.trim();
+    if (q.length < 2) {
+      setSearchResults([]);
+      return;
     }
+
+    const results = timelineData.filter(item => 
+      containsKeyword(item.title, q) || 
+      containsKeyword(item.description, q) ||
+      containsKeyword(item.year, q) || 
+      containsKeyword(item.slug, q)
+    );
+    setSearchResults(results);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!inputValue.trim() || !sessionId || isTyping) return;
+    if (!inputValue.trim()) return;
+    performSearch(inputValue);
+  };
 
-    setIsTyping(true);
-
-    const chatSession: ChatSession = {
-      sessionId,
-      chatInput: inputValue.trim(),
-    };
-
-    try {
-      await createChatSession(chatSession); // Chỉ phát audio, không hiển thị text
-      setInputValue("");
-    } catch (error: any) {
-      console.error("❌ Chat error:", error);
-    } finally {
-      setIsTyping(false);
-    }
+  const handleNavigate = (slug: string) => {
+    router.push(`/timeline/${slug}`);
+    onClose();
+    setSearchResults([]);
+    setInputValue("");
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-60 right-6 w-52 bg-white/20 backdrop-blur-sm border border-red-200/30 rounded-2xl shadow-2xl z-20 p-4">
+    <div className="fixed bottom-60 right-6 w-80 bg-white/30 backdrop-blur-md border border-red-200/30 rounded-[2rem] shadow-2xl z-20 p-6 transition-all animate-in fade-in slide-in-from-bottom-4 duration-300">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="font-semibold text-red-600">Trò chuyện với AI</h3>
+        <h3 className="font-bold text-red-600 text-sm tracking-tight">Tìm kiếm nhanh</h3>
         <button
           onClick={onClose}
-          className="text-gray-400 hover:text-gray-600 text-xl"
+          className="text-gray-400 hover:text-red-500 transition-colors"
         >
-          ×
+          <X size={16} />
         </button>
       </div>
 
-      {!isInitialized ? (
-        <div className="text-center">
-          <button
-            onClick={initializeChat}
-            disabled={isInitializing}
-            className="w-full bg-red-600 hover:bg-red-700 disabled:bg-red-300 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
-          >
-            {isInitializing ? "Đang kết nối..." : "Bắt đầu chat"}
-          </button>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} className="space-y-3">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              placeholder="Hỏi về Bác Hồ..."
-              className="flex-1 min-w-0 px-3 py-2 border border-red-200 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm"
-              disabled={isTyping}
-              autoFocus
-            />
-            <button
-              type="submit"
-              disabled={!inputValue.trim() || isTyping}
-              className="flex-shrink-0 bg-red-600 hover:bg-red-700 disabled:bg-red-300 text-white p-2 rounded-full transition-colors flex items-center justify-center w-9 h-9"
-            >
-              {isTyping ? (
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-              ) : (
-                <Send size={14} />
-              )}
-            </button>
+      <div className="space-y-4">
+        {/* Search Results */}
+        {searchResults.length > 0 && (
+          <div className="max-h-48 overflow-y-auto space-y-2 mb-2 pr-1 custom-scrollbar">
+            <div className="flex items-center justify-between sticky top-0 bg-white/5 backdrop-blur-md pb-1 z-10">
+              <span className="text-[10px] font-bold text-red-500 uppercase tracking-widest">Gợi ý nội dung</span>
+              <button onClick={() => setSearchResults([])} className="text-gray-400 hover:text-red-500">
+                <X size={10} />
+              </button>
+            </div>
+            {searchResults.map((result, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleNavigate(result.slug)}
+                className="w-full text-left p-2 rounded-lg bg-white/80 hover:bg-red-50 border border-red-100 transition-all group flex items-start gap-2 shadow-sm"
+              >
+                <Search size={12} className="mt-1 text-red-400 group-hover:text-red-600 flex-shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <p className="text-[11px] font-bold text-gray-800 truncate">{result.year}: {result.title}</p>
+                </div>
+                <ArrowRight size={10} className="mt-1 text-gray-300 group-hover:text-red-600 transform group-hover:translate-x-0.5 transition-all" />
+              </button>
+            ))}
           </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="relative">
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => {
+              setInputValue(e.target.value);
+              performSearch(e.target.value);
+            }}
+            placeholder="Tìm mục cần đến..."
+            className="w-full pl-4 pr-10 py-2.5 bg-white/90 border border-red-200 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm shadow-md transition-all"
+            autoFocus
+          />
+          <button
+            type="submit"
+            disabled={!inputValue.trim()}
+            className="absolute right-1 top-1 bg-red-600 hover:bg-red-700 disabled:bg-red-300 text-white p-2 rounded-full transition-all flex items-center justify-center w-8 h-8 shadow-lg active:scale-90"
+          >
+            <Send size={12} />
+          </button>
         </form>
-      )}
+      </div>
+      
+      <style jsx>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(220, 38, 38, 0.2);
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(220, 38, 38, 0.4);
+        }
+      `}</style>
     </div>
   );
 }

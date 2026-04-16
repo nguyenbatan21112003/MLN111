@@ -76,7 +76,7 @@ const timelineData: TimelineEvent[] = [
       {
         type: "paragraph",
         content:
-          "Luận điểm này cho thấy con người không tồn tại biệt lập mà luôn gắn liền với hệ thống các quan hệ xã hội. Những quan hệ này không phải là sự cộng gộp đơn giản mà là một chỉnh thể phức tạp bao gồm quan hệ kinh tế, chính trị, văn hóa, đạo đức… Chúng tác động qua lại lẫn nhau và cùng nhau hình thành nên bản chất của mỗi cá nhân.",
+          "Luận điểm này cho thấy con người không tồn tại biệt lập mà luôn gắn liền with hệ thống các quan hệ xã hội. Những quan hệ này không phải là sự cộng gộp đơn giản mà là một chỉnh thể phức tạp bao gồm quan hệ kinh tế, chính trị, văn hóa, đạo đức… Chúng tác động qua lại lẫn nhau và cùng nhau hình thành nên bản chất của mỗi cá nhân.",
       },
 
       {
@@ -300,7 +300,9 @@ const timelineData: TimelineEvent[] = [
           <>
             Con đường thực hiện giải phóng con người là một quá trình lịch sử lâu
             dài, bao gồm đấu tranh giai cấp, cách mạng xã hội và phát triển lực
-            lượng sản xuất.{" "}
+            lượng sản xuất.
+            <br />
+            <br />
             <strong>
               Tóm lại, giải phóng con người chính là đưa con người từ trạng thái
               bị tha hóa, bị chi phối bởi vật chất và các quan hệ xã hội áp bức,
@@ -440,32 +442,16 @@ const timelineData: TimelineEvent[] = [
             Theo Karl Marx, con người khác động vật ở chỗ có lao động có ý thức, biết
             sáng tạo và biến thế giới thành sản phẩm của mình. Trong xã hội lý tưởng,
             lao động không chỉ để tồn tại mà là cách con người thể hiện bản chất, tạo ra
-            giá trị và ý nghĩa sống, tức “sống để làm việc”. 
+            giá trị và ý nghĩa sống, tức “sống để làm việc”.
+            <br />
+            <br />
             Để đạt được xã hội lý tưởng thì cần phải:
-          </>
-        ),
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            Xóa bỏ chế độ tư hữu tư liệu sản xuất.
-          </>
-        ),
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            Xây dựng quan hệ sản xuất mang tính cộng đồng.
-          </>
-        ),
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            Phát triển lực lượng sản xuất đủ cao để đảm bảo nhu cầu cơ bản.
+            <br />
+            - Xóa bỏ chế độ tư hữu tư liệu sản xuất.
+            <br />
+            - Xây dựng quan hệ sản xuất mang tính cộng đồng.
+            <br />
+            - Phát triển lực lượng sản xuất đủ cao để đảm bảo nhu cầu cơ bản.
           </>
         ),
       },
@@ -496,7 +482,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content: (
           <>
-            Thực tiễn cho thấy điều này ở những người lao động vì lý tưởng và đam mê:
+            Thực tiễn cho thấy điều này ở những người lao động vì lý tưởng and đam mê:
             nghệ sĩ, nhà thiết kế tạo ra giá trị tinh thần và dấu ấn cá nhân; các nhà khoa học
             như Einstein hay Marie Curie dành cả đời nghiên cứu, coi lao động là một phần của cuộc sống;
             hay các tình nguyện viên làm việc vì cộng đồng và ý nghĩa xã hội.
@@ -512,6 +498,155 @@ const timelineData: TimelineEvent[] = [
               thành nhu cầu tự thân. Khi đó, “sống để làm việc” chính là cách con người khẳng định bản chất
               sáng tạo và ý nghĩa tồn tại của mình.
             </strong>
+          </>
+        ),
+      },
+    ],
+    images: ["/image/body.png"],
+  },
+  {
+    year: "Mục 6",
+    title: "Ví dụ thực tiễn",
+    slug: "vi-du-thuc-tien",
+    description:
+      "Phân tích các ví dụ từ dây chuyền sản xuất hiện đại đến kinh tế sáng tạo để thấy rõ sự tha hóa và khát vọng tự do.",
+    richContent: [
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Để hiểu rõ hơn về sự chuyển dịch giữa tha hóa và giải phóng lao động,
+            hãy nhìn vào những xu hướng thực tế của thế hệ trẻ (Gen Z) trong môi
+            trường làm việc hiện đại:
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Ví dụ 1 (Đại diện cho Tha hóa lao động):</strong>
+            <br />
+            Xu hướng{" "}
+            <a
+              href="https://vnexpress.net/nhung-xu-huong-cua-gioi-tre-anh-huong-toi-tuong-lai-viec-lam-4787695.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 hover:underline"
+            >
+              <strong>“quiet quitting”</strong>
+            </a>{" "}
+            (nghỉ việc trong âm thầm) đang trở nên phổ biến. Thay vì cống hiến hết
+            mình, nhiều bạn trẻ chọn làm việc ở mức tối thiểu để tránh burnout (kiệt
+            sức) và bảo vệ sức khỏe tinh thần. Điều này phản ánh một thái độ thay
+            đổi: khi lao động không mang lại ý nghĩa tự thân, nó trở thành gánh nặng
+            cần được tiết giảm.
+            <br />
+            Thực tế cho thấy <strong>35% người lao động</strong> sẵn sàng nghỉ việc nếu họ cảm thấy mất cân bằng work-life, minh chứng cho việc họ từ chối bị "tha hóa" bởi công việc áp lực.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Ví dụ 2 (Đại diện cho Giải phóng / Đời sống minh triết):</strong>
+            <br />
+            Ngược lại, Gen Z cũng là thế hệ tiên phong trong việc sử dụng{" "}
+            <strong>công nghệ và AI</strong> để tối ưu hóa công việc, từ đó chủ động
+            tạo ra giá trị và dành thời gian phát triển bản thân.
+            <br />
+            Nhiều người trẻ hiện nay không chỉ đi làm vì tiền; họ ưu tiên chọn những
+            công việc{" "}
+            <a
+              href="https://english.news.cn/20231214/ad7a4ae0e3d24b38b706540ddbe82027/c.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 hover:underline"
+            >
+              <strong>phù hợp với giá trị cá nhân</strong>
+            </a>{" "}
+            và mang lại ý nghĩa sống. Đây chính là biểu hiện của khát vọng giải
+            phóng: biến lao động từ sự cưỡng bách sinh tồn thành công cụ để khẳng
+            định bản sắc và tự do sáng tạo.
+          </>
+        ),
+      },
+      {
+        type: "quote",
+        content: "Lao động phải là một hoạt động tự do, chứ không phải là một sự cưỡng bức.",
+        author: "Karl Marx",
+      },
+    ],
+    images: ["/image/body.png"],
+  },
+  {
+    year: "Mục 7",
+    title: "Tổng kết",
+    slug: "tong-ket",
+    description:
+      "Tổng kết mối quan hệ giữa lao động và bản chất người, hướng tới một đời sống minh triết và tự do.",
+    richContent: [
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Lao động là bản chất của con người — quan điểm của Karl Marx:</strong>
+            <br />
+            Theo Karl Marx, con người là một thực thể sinh học – xã hội, trong đó lao động sản xuất chính là hoạt động bản chất và quan trọng nhất. Lao động là điều kiện tiên quyết, cần thiết và chủ yếu quyết định sự hình thành cũng như phát triển của con người, phân biệt con người căn bản với súc vật ngay từ khi họ bắt đầu biết sản xuất ra tư liệu sinh hoạt của mình.
+            <br />
+            Lao động không chỉ giúp con người tạo ra của cải vật chất để tồn tại mà còn là phương thức để con người phát triển toàn diện thông qua việc hình thành ý thức, nhân cách và các quan hệ xã hội.
+          </>
+        ),
+      },
+      {
+        type: "quote",
+        content: "Trong tính hiện thực của nó, bản chất con người là tổng hòa các quan hệ xã hội.",
+        author: "Karl Marx",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>4 hình thức tha hóa lao động (Bản thảo kinh tế-triết học 1844):</strong>
+            <br />
+            Hiện tượng tha hóa lao động xảy ra khi quá trình lao động và sản phẩm làm ra bị biến thành lực lượng đối lập, quay lại nô dịch và thống trị con người, với nguyên nhân gốc rễ bắt nguồn từ chế độ tư hữu về tư liệu sản xuất. 4 hình thức cụ thể bao gồm:
+            <br />
+            - <strong>Tha hóa quá trình lao động:</strong> Hoạt động lao động mất đi tính tự nguyện, bị ép buộc nhằm duy trì thể xác. Người lao động chỉ thấy mình như con vật khi lao động.
+            <br />
+            - <strong>Tha hóa đối với sản phẩm:</strong> Người lao động làm ra sản phẩm nhưng không được sở hữu, khiến họ lệ thuộc vào chính sản phẩm do mình tạo ra.
+            <br />
+            - <strong>Tha hóa bản chất người:</strong> Lao động mất đi tính sáng tạo khiến con người không thể phát triển đúng tiềm năng, trở nên què quặt, phiến diện.
+            <br />
+            - <strong>Tha hóa quan hệ xã hội:</strong> Quan hệ người với người bị thay thế bằng quan hệ giữa người và vật (tiền công, hàng hóa), mang tính công cụ và cạnh tranh.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Giải phóng con người trong xã hội cộng sản:</strong>
+            <br />
+            Từ việc phân tích sự tha hóa, triết học Mác vạch ra con đường giải phóng con người với mục tiêu trả những quan hệ của con người về lại với bản thân con người. Con đường thực hiện tất yếu là xóa bỏ chế độ tư hữu và thay đổi nền tảng kinh tế - xã hội nhằm đưa lao động về lại với bản chất sáng tạo, tự do.
+          </>
+        ),
+      },
+      {
+        type: "quote",
+        content: "Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người",
+        author: "Karl Marx và Friedrich Engels",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Đời sống minh triết thực sự là gì?</strong>
+            <br />
+            Dưới góc nhìn biện chứng duy vật, chúng ta phải bác bỏ tư duy siêu hình "hoặc là cái này, hoặc là cái kia". "Đi làm để sống" phản ánh thực tại khách quan khi tha hóa còn tồn tại; "Sống để đi làm" phản ánh lý tưởng nhân loại về khát vọng xóa bỏ tha hóa.
+            <br />
+            <br />
+            <strong>Kết luận:</strong> Đời sống minh triết tuyệt đối không phải là những khẩu hiệu "self-help" hời hợt về cân bằng công việc và cuộc sống. Nó đòi hỏi nhận thức sâu sắc về thực trạng tha hóa nhưng không đầu hàng hoàn cảnh. Đó là quá trình dấn thân nỗ lực vươn lên, vừa lao động để duy trì tồn tại, vừa đấu tranh cải biến những điều kiện cũ để hướng tới sự giải phóng bản thân toàn diện trong lao động sáng tạo.
           </>
         ),
       },
@@ -698,7 +833,20 @@ export default function TimelineDetail() {
                 </h4>
               </button>
             ) : (
-              <div className="flex-1"></div>
+              <button
+                onClick={() => router.push("/technologies")}
+                className="flex-1 p-8 rounded-3xl bg-slate-900 text-white hover:bg-red-950 hover:shadow-2xl transition-all group text-right"
+              >
+                <div className="flex items-center justify-end gap-2 text-slate-400 mb-3">
+                  <span className="text-xs font-bold uppercase tracking-widest">
+                    Tiếp theo
+                  </span>
+                  <ArrowLeft className="w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="text-lg font-bold">
+                  CÔNG NGHỆ SỬ DỤNG
+                </h4>
+              </button>
             )}
           </div>
         </article>
