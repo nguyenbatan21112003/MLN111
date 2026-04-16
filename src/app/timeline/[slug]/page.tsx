@@ -35,16 +35,34 @@ const timelineData: TimelineEvent[] = [
     richContent: [
       {
         type: "paragraph",
-        content: "Theo triết học Marx-Lenin, con người không phải là một thực thể trừu tượng, cô lập mà là một thực thể sinh học - xã hội thống nhất. Bản chất con người không phải là cái gì đó bẩm sinh, bất biến mà được hình thành và biến đổi thông qua hoạt động thực tiễn, đặc biệt là hoạt động lao động sản xuất.",
+        content:
+          "Về bản chất con người: Con người là một hệ thống chỉnh thể thống nhất cá thể - loài, mang những thuộc tính cá thể, đơn nhất, lẫn những thuộc tính chung, phổ biến của loài.",
       },
       {
         type: "quote",
-        content: "Trong tính hiện thực của nó, bản chất con người là tổng hòa những quan hệ xã hội.",
-        author: "Karl Marx"
+        content:
+          "Trong tính hiện thực của nó, bản chất của con người là tổng hòa các quan hệ xã hội.",
+        author: "C. Mác",
       },
       {
         type: "paragraph",
-        content: "Lao động chính là điều kiện cơ bản nhất để con người tách khỏi thế giới động vật. Thông qua lao động, con người không chỉ cải tạo thế giới khách quan mà còn cải tạo chính bản thân mình, phát triển các năng lực tư duy, ngôn ngữ và các giá trị đạo đức, thẩm mỹ.",
+        content:
+          "Cụ thể hơn, các quan hệ xã hội này không phải là sự kết hợp giản đơn hay cộng gộp lại, mà là sự tổng hòa của rất nhiều loại quan hệ: quan hệ quá khứ, hiện tại, vật chất, tinh thần, trực tiếp, gián tiếp, kinh tế, phi kinh tế.... Mỗi quan hệ có vị trí, vai trò khác nhau, tác động qua lại và không tách rời nhau; khi các quan hệ xã hội này thay đổi thì sớm muộn bản chất con người cũng thay đổi theo.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Ngoài ra, con người vừa là sản phẩm của lịch sử, vừa là chủ thể sáng tạo ra lịch sử. Khác với con vật (nếu có tham dự vào lịch sử thì cũng không hề biết và không do ý muốn), con người càng cách xa con vật thì càng tự mình làm ra lịch sử của mình một cách có ý thức.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Về vai trò của lao động: Sự khác biệt căn bản giữa con người và con vật được triết học Mác xác định dựa trên nền tảng của sản xuất vật chất. Ngay từ khi con người bắt đầu sản xuất ra những tư liệu sinh hoạt của mình, con người đã bắt đầu tự phân biệt mình với súc vật. Hoạt động lịch sử đầu tiên khiến con người tách khỏi giới tự nhiên, có ý nghĩa sáng tạo chân chính chính là hoạt động chế tạo công cụ lao động.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Lao động là điều kiện tiên quyết, cần thiết và chủ yếu quyết định sự hình thành, phát triển của con người cả về phương diện sinh học lẫn xã hội. Thông qua lao động và giao tiếp xã hội, tư duy, ý thức và ngôn ngữ của con người mới xuất hiện và phát triển, làm nổi trội tính xã hội của con người.",
       }
     ],
     images: ["/image/body.png"],
@@ -57,11 +75,33 @@ const timelineData: TimelineEvent[] = [
     richContent: [
       {
         type: "paragraph",
-        content: "Tha hóa lao động là một khái niệm trung tâm trong các tác phẩm kinh điển của Marx. Đây là hiện tượng mà sản phẩm do người lao động tạo ra lại trở thành một lực lượng xa lạ, đối lập và thống trị chính họ. Trong chế độ tư hữu, lao động không còn là sự tự khẳng định mình mà trở thành sự phủ định mình.",
+        content:
+          "Tha hóa con người là một hiện tượng lịch sử đặc thù gắn với xã hội có sự phân chia giai cấp, bắt nguồn từ chế độ tư hữu về tư liệu sản xuất và bị đẩy lên mức cao nhất trong nền sản xuất tư bản chủ nghĩa.",
       },
       {
         type: "paragraph",
-        content: "Sự tha hóa thể hiện ở bốn khía cạnh: tha hóa đối với sản phẩm lao động, tha hóa trong quá trình lao động, tha hóa đối với bản chất loài và tha hóa giữa người với người. Khi đó, người công nhân chỉ cảm thấy mình tự do khi thực hiện các chức năng động vật (ăn, ngủ, sinh sản), còn khi lao động - chức năng làm người - thì họ cảm thấy mình bị gò bó như một con vật.",
+        content:
+          "Thực chất của tha hóa con người là lao động bị tha hóa, thể hiện sâu sắc qua 4 khía cạnh (dựa trên Bản thảo kinh tế - triết học 1844 và nội dung phân tích của tài liệu):",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sự tha hóa của người lao động đối với sản phẩm lao động: Quá trình lao động và sản phẩm của lao động từ chỗ để phục vụ, phát triển con người đã bị biến thành lực lượng đối lập, nô dịch và thống trị con người. Tư liệu sản xuất do con người tạo ra nhưng con người lại bị lệ thuộc vào chính nó.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sự tha hóa trong bản thân hành vi lao động: Lao động vốn là hoạt động sáng tạo đặc trưng của con người, nhưng dưới sự ép buộc của điều kiện xã hội, nó trở thành hoạt động mang tính cưỡng bức để duy trì thể xác. Biểu hiện rõ nhất là sự trái ngược chức năng: Người lao động chỉ thấy mình là con người khi thực hiện các chức năng sinh học bản năng (ăn, ngủ, sinh con đẻ cái), còn khi lao động (thực hiện chức năng cao quý của con người) thì lại chỉ thấy mình như con vật. Con người bị đánh mất mình trong chính hoạt động đặc trưng của mình.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sự tha hóa đối với bản chất người: Sự tha hóa làm cho con người trở nên què quặt, phiến diện, thiếu khuyết trên nhiều phương diện, không thể phát huy được sức mạnh bản chất người. Quá trình lao động ngày càng trở thành những thao tác giản đơn do dây chuyền công nghệ quy định, người công nhân trở thành một bộ phận của máy móc và ngày càng phụ thuộc vào nó.",
+      },
+      {
+        type: "paragraph",
+        content:
+          'Sự tha hóa giữa người với người: Việc người lao động buộc phải làm thuê cho chủ tư bản khiến sản phẩm họ làm ra trở nên xa lạ, được dùng để trói buộc họ. Từ đó, quan hệ xã hội bị đảo lộn: Quan hệ giữa người với người (lẽ ra là quan hệ xã hội đúng nghĩa) bị thay thế bằng quan hệ giữa người và vật (thông qua vật phẩm và số tiền công). Nó tất yếu dẫn tới "sự tha hoá của con người khỏi con người".',
       }
     ],
     images: ["/image/body.png"],
@@ -74,11 +114,18 @@ const timelineData: TimelineEvent[] = [
     richContent: [
       {
         type: "paragraph",
-        content: "Giải phóng con người là mục tiêu cao cả nhất của chủ nghĩa Marx. Nó không chỉ đơn thuần là giải phóng về mặt tinh thần hay tôn giáo, mà là sự giải phóng thực tế khỏi mọi hình thức áp bức, bóc lột và tha hóa. Để giải phóng con người, trước hết phải giải phóng xã hội khỏi chế độ tư hữu tư bản chủ nghĩa.",
+        content:
+          "Giải phóng con người trong triết học Mác hoàn toàn khác với sự giải thoát hư ảo lên Thiên đường của tôn giáo, hay cách giải phóng phiến diện bằng pháp luật, đạo đức của các học thuyết duy tâm, siêu hình.",
       },
       {
         type: "paragraph",
-        content: "Marx khẳng định rằng sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người. Một xã hội tương lai - xã hội cộng sản - sẽ là nơi mà con người có thể phát triển toàn diện mọi năng lực sáng tạo của mình.",
+        content:
+          'Thực chất và điều kiện của sự giải phóng: Bất kỳ sự giải phóng nào cũng bao hàm việc "trả thế giới con người, những quan hệ của con người về với bản thân con người". Nội dung then chốt là phải giải phóng người lao động thoát khỏi lao động bị tha hóa, biến lao động sáng tạo trở thành chức năng thực sự của con người. Để làm được điều này, điều kiện tiên quyết là phải xóa bỏ giai cấp, xóa bỏ chế độ tư hữu tư nhân về tư liệu sản xuất và đẩy sức sản xuất phát triển ở trình độ rất cao.',
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người: Khi chế độ tư hữu bị thủ tiêu, lao động không còn bị tha hóa, xã hội trở thành sự liên hiệp của các cá nhân và con người bắt đầu được phát triển tự do. Con người là sự thống nhất giữa cá nhân và xã hội, nên sự phát triển tự do của mỗi người tất yếu là điều kiện cho sự phát triển tự do của mọi người, và ngược lại. Sự tự do này chỉ đạt được triệt để khi con người hoàn toàn thoát khỏi sự tha hóa, thoát khỏi sự nô dịch, và khi sự khác biệt giữa thành thị và nông thôn, giữa lao động trí óc và lao động chân tay không còn, khi con người không còn bị trói buộc bởi sự phân công lao động xã hội.",
       }
     ],
     images: ["/image/body.png"],
