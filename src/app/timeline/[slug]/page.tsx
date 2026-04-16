@@ -31,47 +31,108 @@ const timelineData: TimelineEvent[] = [
     year: "Mục 1",
     title: "Bản chất của con người và vai trò của lao động",
     slug: "ban-chat-con-nguoi-va-lao-dong",
-    description: "Khám phá quan niệm triết học về bản chất con người và vai trò quyết định của lao động.",
+    description:
+      "Khám phá quan niệm triết học về bản chất con người và vai trò quyết định của lao động.",
+
     richContent: [
       {
         type: "paragraph",
         content:
-          "Về bản chất con người: Con người là một hệ thống chỉnh thể thống nhất cá thể - loài, mang những thuộc tính cá thể, đơn nhất, lẫn những thuộc tính chung, phổ biến của loài.",
+          "Để hiểu bản chất con người, theo Karl Marx, cần bắt đầu từ sự khác biệt căn bản giữa con người và động vật. Động vật chỉ thích nghi một cách thụ động với tự nhiên và hoạt động theo bản năng, trong khi con người lại chủ động cải biến tự nhiên thông qua lao động, biết sản xuất ra tư liệu sinh hoạt và tạo ra những giá trị vượt lên trên nhu cầu trực tiếp của mình.",
       },
+
+      {
+        type: "paragraph",
+        content:
+          "Chính từ thời điểm con người bắt đầu sản xuất ra tư liệu sinh hoạt, con người đã tự tách mình khỏi thế giới động vật. Lao động không chỉ là hoạt động sinh tồn mà còn là hoạt động mang tính sáng tạo, có mục đích và ý thức, đánh dấu bước chuyển căn bản từ tự nhiên sang xã hội.",
+      },
+
+      {
+        type: "image",
+        src: "/image/human-vs-animal.png",
+        alt: "So sánh con người và động vật",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Theo quan điểm của triết học Mác, con người là một thực thể sinh học – xã hội. Về mặt sinh học, con người mang những đặc điểm tự nhiên như nhu cầu ăn, ở, sinh tồn. Tuy nhiên, yếu tố quyết định bản chất con người lại nằm ở phương diện xã hội, nơi con người tồn tại thông qua các mối quan hệ và hoạt động thực tiễn.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Trong toàn bộ đời sống xã hội, lao động sản xuất vật chất giữ vai trò nền tảng. Nhờ lao động, con người không chỉ tạo ra của cải vật chất mà còn hình thành ý thức, phát triển tư duy và xây dựng các quan hệ xã hội.",
+      },
+
       {
         type: "quote",
         content:
           "Trong tính hiện thực của nó, bản chất của con người là tổng hòa các quan hệ xã hội.",
         author: "C. Mác",
       },
+
       {
         type: "paragraph",
         content:
-          "Cụ thể hơn, các quan hệ xã hội này không phải là sự kết hợp giản đơn hay cộng gộp lại, mà là sự tổng hòa của rất nhiều loại quan hệ: quan hệ quá khứ, hiện tại, vật chất, tinh thần, trực tiếp, gián tiếp, kinh tế, phi kinh tế.... Mỗi quan hệ có vị trí, vai trò khác nhau, tác động qua lại và không tách rời nhau; khi các quan hệ xã hội này thay đổi thì sớm muộn bản chất con người cũng thay đổi theo.",
+          "Luận điểm này cho thấy con người không tồn tại biệt lập mà luôn gắn liền với hệ thống các quan hệ xã hội. Những quan hệ này không phải là sự cộng gộp đơn giản mà là một chỉnh thể phức tạp bao gồm quan hệ kinh tế, chính trị, văn hóa, đạo đức… Chúng tác động qua lại lẫn nhau và cùng nhau hình thành nên bản chất của mỗi cá nhân.",
       },
+
       {
-        type: "paragraph",
-        content:
-          "Ngoài ra, con người vừa là sản phẩm của lịch sử, vừa là chủ thể sáng tạo ra lịch sử. Khác với con vật (nếu có tham dự vào lịch sử thì cũng không hề biết và không do ý muốn), con người càng cách xa con vật thì càng tự mình làm ra lịch sử của mình một cách có ý thức.",
+        type: "image",
+        src: "/image/social-relations.png",
+        alt: "Mạng lưới quan hệ xã hội",
       },
+
       {
         type: "paragraph",
         content:
-          "Về vai trò của lao động: Sự khác biệt căn bản giữa con người và con vật được triết học Mác xác định dựa trên nền tảng của sản xuất vật chất. Ngay từ khi con người bắt đầu sản xuất ra những tư liệu sinh hoạt của mình, con người đã bắt đầu tự phân biệt mình với súc vật. Hoạt động lịch sử đầu tiên khiến con người tách khỏi giới tự nhiên, có ý nghĩa sáng tạo chân chính chính là hoạt động chế tạo công cụ lao động.",
+          "Do đó, khi các quan hệ xã hội thay đổi, bản chất con người cũng sẽ thay đổi theo. Con người không chỉ là sản phẩm của lịch sử mà còn là chủ thể sáng tạo ra lịch sử thông qua hoạt động thực tiễn của mình.",
       },
+
       {
         type: "paragraph",
         content:
-          "Lao động là điều kiện tiên quyết, cần thiết và chủ yếu quyết định sự hình thành, phát triển của con người cả về phương diện sinh học lẫn xã hội. Thông qua lao động và giao tiếp xã hội, tư duy, ý thức và ngôn ngữ của con người mới xuất hiện và phát triển, làm nổi trội tính xã hội của con người.",
-      }
+          "Xét về vai trò của lao động, triết học Mác – Lênin khẳng định rằng lao động là điều kiện tiên quyết, cần thiết và giữ vai trò quyết định trong sự hình thành và phát triển của con người. Chính thông qua lao động, con người dần hoàn thiện cả về thể chất lẫn trí tuệ.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Theo Friedrich Engels, lao động đã góp phần làm cho bàn tay trở nên khéo léo, não bộ phát triển và cơ thể con người hoàn thiện hơn. Đồng thời, trong quá trình lao động, con người buộc phải giao tiếp với nhau, từ đó hình thành ngôn ngữ, và từ ngôn ngữ phát triển thành tư duy và ý thức.",
+      },
+
+      {
+        type: "image",
+        src: "/image/labor-evolution.png",
+        alt: "Lao động và sự phát triển của con người",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Không chỉ dừng lại ở đó, lao động còn là nền tảng tạo ra toàn bộ đời sống xã hội. Thông qua lao động, con người hình thành các quan hệ sản xuất, phân công lao động và các thiết chế xã hội. Vì vậy, lao động không chỉ tạo ra của cải mà còn tạo ra chính con người và xã hội loài người.",
+      },
+
+      {
+        type: "paragraph",
+        content:
+          "Tóm lại, con người là một thực thể sinh học – xã hội, trong đó lao động giữ vai trò quyết định. Lao động không chỉ giúp con người tồn tại mà còn là con đường để con người phát triển, hoàn thiện bản thân và xây dựng xã hội.",
+      },
     ],
-    images: ["/image/body.png"],
+
+    images: [
+      "/image/human-vs-animal.png",
+      "/image/social-relations.png",
+      "/image/labor-evolution.png",
+    ],
   },
   {
     year: "Mục 2",
     title: "Hiện tượng tha hóa con người và tha hóa lao động",
     slug: "tha-hoa-con-nguoi-va-lao-dong",
-    description: "Phân tích sự tha hóa của lao động và hệ quả đối với bản chất con người.",
+    description:
+      "Phân tích sự tha hóa của lao động và hệ quả đối với bản chất con người.",
     richContent: [
       {
         type: "paragraph",
@@ -102,7 +163,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           'Sự tha hóa giữa người với người: Việc người lao động buộc phải làm thuê cho chủ tư bản khiến sản phẩm họ làm ra trở nên xa lạ, được dùng để trói buộc họ. Từ đó, quan hệ xã hội bị đảo lộn: Quan hệ giữa người với người (lẽ ra là quan hệ xã hội đúng nghĩa) bị thay thế bằng quan hệ giữa người và vật (thông qua vật phẩm và số tiền công). Nó tất yếu dẫn tới "sự tha hoá của con người khỏi con người".',
-      }
+      },
     ],
     images: ["/image/body.png"],
   },
@@ -110,7 +171,8 @@ const timelineData: TimelineEvent[] = [
     year: "Mục 3",
     title: "Vấn đề giải phóng con người",
     slug: "giai-phong-con-nguoi",
-    description: "Mục tiêu tối thượng của triết học Marx-Lenin là giải phóng con người.",
+    description:
+      "Mục tiêu tối thượng của triết học Marx-Lenin là giải phóng con người.",
     richContent: [
       {
         type: "paragraph",
@@ -126,7 +188,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content:
           "Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người: Khi chế độ tư hữu bị thủ tiêu, lao động không còn bị tha hóa, xã hội trở thành sự liên hiệp của các cá nhân và con người bắt đầu được phát triển tự do. Con người là sự thống nhất giữa cá nhân và xã hội, nên sự phát triển tự do của mỗi người tất yếu là điều kiện cho sự phát triển tự do của mọi người, và ngược lại. Sự tự do này chỉ đạt được triệt để khi con người hoàn toàn thoát khỏi sự tha hóa, thoát khỏi sự nô dịch, và khi sự khác biệt giữa thành thị và nông thôn, giữa lao động trí óc và lao động chân tay không còn, khi con người không còn bị trói buộc bởi sự phân công lao động xã hội.",
-      }
+      },
     ],
     images: ["/image/body.png"],
   },
@@ -134,16 +196,19 @@ const timelineData: TimelineEvent[] = [
     year: "Mục 4",
     title: 'Lập luận "Đi làm để sống"',
     slug: "di-lam-de-song",
-    description: "Phân tích quan điểm lao động như một phương tiện sinh tồn tất yếu.",
+    description:
+      "Phân tích quan điểm lao động như một phương tiện sinh tồn tất yếu.",
     richContent: [
       {
         type: "paragraph",
-        content: '"Đi làm để sống" phản ánh khía cạnh bản năng và tất yếu vật chất của lao động. Trong bất kỳ xã hội nào, con người trước hết phải ăn, uống, ở và mặc trước khi có thể làm chính trị, khoa học hay nghệ thuật. Lao động để thỏa mãn các nhu cầu sinh tồn cơ bản là nấc thang đầu tiên của hoạt động làm người.',
+        content:
+          '"Đi làm để sống" phản ánh khía cạnh bản năng và tất yếu vật chất của lao động. Trong bất kỳ xã hội nào, con người trước hết phải ăn, uống, ở và mặc trước khi có thể làm chính trị, khoa học hay nghệ thuật. Lao động để thỏa mãn các nhu cầu sinh tồn cơ bản là nấc thang đầu tiên của hoạt động làm người.',
       },
       {
         type: "paragraph",
-        content: "Tuy nhiên, nếu lao động chỉ dừng lại ở mức độ duy trì sự sống thuần túy, con người dễ rơi vào tình trạng bị lệ thuộc và chịu sự chi phối của các nhu cầu sinh học. Triết học Marx khuyến khích chúng ta nhìn xa hơn, biến việc \"đi làm để sống\" thành tiền đề cho những giá trị cao đẹp hơn của đời sống con người.",
-      }
+        content:
+          'Tuy nhiên, nếu lao động chỉ dừng lại ở mức độ duy trì sự sống thuần túy, con người dễ rơi vào tình trạng bị lệ thuộc và chịu sự chi phối của các nhu cầu sinh học. Triết học Marx khuyến khích chúng ta nhìn xa hơn, biến việc "đi làm để sống" thành tiền đề cho những giá trị cao đẹp hơn của đời sống con người.',
+      },
     ],
     images: ["/image/body.png"],
   },
@@ -151,21 +216,25 @@ const timelineData: TimelineEvent[] = [
     year: "Mục 5",
     title: 'Lập luận "Sống để đi làm"',
     slug: "song-de-di-lam",
-    description: "Lao động như một nhu cầu tự thân và khẳng định giá trị bản thân.",
+    description:
+      "Lao động như một nhu cầu tự thân và khẳng định giá trị bản thân.",
     richContent: [
       {
         type: "paragraph",
-        content: '"Sống để đi làm" (hay sống để sáng tạo) là tầm cao mới của triết lý nhân sinh. Ở đây, lao động không còn bị coi là gánh nặng hay sự ép buộc mà trở thành nhu cầu tự thân, là phương thức để con người khẳng định sự tồn tại của mình trong thế giới. Đó là quá trình con người in dấu ấn của mình lên vật chất, tạo ra những giá trị hữu ích cho cộng đồng.',
+        content:
+          '"Sống để đi làm" (hay sống để sáng tạo) là tầm cao mới của triết lý nhân sinh. Ở đây, lao động không còn bị coi là gánh nặng hay sự ép buộc mà trở thành nhu cầu tự thân, là phương thức để con người khẳng định sự tồn tại của mình trong thế giới. Đó là quá trình con người in dấu ấn của mình lên vật chất, tạo ra những giá trị hữu ích cho cộng đồng.',
       },
       {
         type: "quote",
-        content: "Hạnh phúc không phải là không làm gì cả, mà là được làm những gì mình yêu thích.",
-        author: "Khuyết danh (phù hợp với tinh thần lao động tự nguyện)"
+        content:
+          "Hạnh phúc không phải là không làm gì cả, mà là được làm những gì mình yêu thích.",
+        author: "Khuyết danh (phù hợp với tinh thần lao động tự nguyện)",
       },
       {
         type: "paragraph",
-        content: "Khi đạt đến trình độ này, con người sẽ tìm thấy niềm vui trong công việc, tìm thấy ý nghĩa của sự cống hiến. Đời sống minh triết chính là sự cân bằng giữa việc đáp ứng các nhu cầu vật chất và việc thỏa mãn nhu cầu sáng tạo, đóng góp, sống một cuộc đời có mục đích và lý tưởng.",
-      }
+        content:
+          "Khi đạt đến trình độ này, con người sẽ tìm thấy niềm vui trong công việc, tìm thấy ý nghĩa của sự cống hiến. Đời sống minh triết chính là sự cân bằng giữa việc đáp ứng các nhu cầu vật chất và việc thỏa mãn nhu cầu sáng tạo, đóng góp, sống một cuộc đời có mục đích và lý tưởng.",
+      },
     ],
     images: ["/image/body.png"],
   },
@@ -189,7 +258,7 @@ export default function TimelineDetail() {
     tl.fromTo(
       contentRef.current?.children || [],
       { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" },
     );
   }, [event]);
 
@@ -221,11 +290,15 @@ export default function TimelineDetail() {
             className="flex items-center gap-2 text-slate-700 hover:text-red-600 transition-colors group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            <span className="font-semibold uppercase tracking-wider text-sm">Quay về</span>
+            <span className="font-semibold uppercase tracking-wider text-sm">
+              Quay về
+            </span>
           </button>
-          
+
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Triết học Marx-Lenin</span>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+              Triết học Marx-Lenin
+            </span>
           </div>
         </div>
       </div>
@@ -239,11 +312,11 @@ export default function TimelineDetail() {
               <BookOpen className="w-3.5 h-3.5" />
               {event.year}
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight font-serif italic">
               {event.title}
             </h1>
-            
+
             <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed italic">
               "{event.description}"
             </p>
@@ -251,8 +324,8 @@ export default function TimelineDetail() {
 
           {/* Featured Image Overlay Card (Simple but Premium) */}
           <div className="relative rounded-3xl overflow-hidden mb-16 shadow-2xl aspect-[16/9] group">
-            <img 
-              src={event.images[0]} 
+            <img
+              src={event.images[0]}
               alt={event.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
             />
@@ -264,10 +337,10 @@ export default function TimelineDetail() {
             {event.richContent.map((item, index) => {
               if (item.type === "paragraph") {
                 return (
-                  <p 
+                  <p
                     key={index}
                     className="text-xl text-slate-800 leading-relaxed font-serif"
-                    style={{ textAlign: 'justify' }}
+                    style={{ textAlign: "justify" }}
                   >
                     {item.content}
                   </p>
@@ -276,15 +349,20 @@ export default function TimelineDetail() {
 
               if (item.type === "quote") {
                 return (
-                  <div key={index} className="py-8 px-10 bg-white border-l-8 border-red-600 rounded-2xl shadow-sm my-12 relative">
+                  <div
+                    key={index}
+                    className="py-8 px-10 bg-white border-l-8 border-red-600 rounded-2xl shadow-sm my-12 relative"
+                  >
                     <Quote className="absolute -top-4 -right-4 w-12 h-12 text-red-50/50 -rotate-12" />
                     <p className="text-2xl md:text-3xl font-black text-slate-900 italic mb-4 leading-snug">
-                       "{item.content}"
+                      "{item.content}"
                     </p>
                     {item.author && (
                       <div className="flex items-center gap-3">
                         <div className="h-[2px] w-8 bg-red-600"></div>
-                        <span className="text-sm font-bold uppercase tracking-widest text-red-600">{item.author}</span>
+                        <span className="text-sm font-bold uppercase tracking-widest text-red-600">
+                          {item.author}
+                        </span>
                       </div>
                     )}
                   </div>
@@ -299,29 +377,49 @@ export default function TimelineDetail() {
           <div className="mt-24 pt-12 border-t border-slate-200 flex flex-col md:flex-row gap-6">
             {currentIndex > 0 ? (
               <button
-                onClick={() => router.push(`/timeline/${timelineData[currentIndex - 1].slug}`)}
+                onClick={() =>
+                  router.push(
+                    `/timeline/${timelineData[currentIndex - 1].slug}`,
+                  )
+                }
                 className="flex-1 p-8 rounded-3xl bg-white border border-slate-200 hover:border-red-200 hover:shadow-xl transition-all group"
               >
                 <div className="flex items-center gap-2 text-slate-400 mb-3">
                   <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                  <span className="text-xs font-bold uppercase tracking-widest">Nội dung trước</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">
+                    Nội dung trước
+                  </span>
                 </div>
-                <h4 className="text-lg font-bold text-slate-800">{timelineData[currentIndex - 1].title}</h4>
+                <h4 className="text-lg font-bold text-slate-800">
+                  {timelineData[currentIndex - 1].title}
+                </h4>
               </button>
-            ) : <div className="flex-1"></div>}
+            ) : (
+              <div className="flex-1"></div>
+            )}
 
             {currentIndex < timelineData.length - 1 ? (
               <button
-                onClick={() => router.push(`/timeline/${timelineData[currentIndex + 1].slug}`)}
+                onClick={() =>
+                  router.push(
+                    `/timeline/${timelineData[currentIndex + 1].slug}`,
+                  )
+                }
                 className="flex-1 p-8 rounded-3xl bg-slate-900 text-white hover:bg-red-950 hover:shadow-2xl transition-all group text-right"
               >
                 <div className="flex items-center justify-end gap-2 text-slate-400 mb-3">
-                  <span className="text-xs font-bold uppercase tracking-widest">Tiếp theo</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">
+                    Tiếp theo
+                  </span>
                   <ArrowLeft className="w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <h4 className="text-lg font-bold">{timelineData[currentIndex + 1].title}</h4>
+                <h4 className="text-lg font-bold">
+                  {timelineData[currentIndex + 1].title}
+                </h4>
               </button>
-            ) : <div className="flex-1"></div>}
+            ) : (
+              <div className="flex-1"></div>
+            )}
           </div>
         </article>
       </div>
