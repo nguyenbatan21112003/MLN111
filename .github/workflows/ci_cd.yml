@@ -1,0 +1,59 @@
+name: CI/CD Pipeline
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+    workflow_dispatch:
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Deploy via SSH
+              uses: appleboy/ssh-action@v0.1.6
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USER }}
+                  password: ${{ secrets.SSH_PASSWORD }}
+                  script: |
+                      set -Eeuo pipefail
+
+                      # --- Config chung ---
+                      REPO_URL="https://x-access-token:${{ secrets.REPO_PAT }}@github.com/AIZY-Outsourcing/tutuonghcm.git"
+                      APP_DIR="$HOME/tutuonghcm"
+
+                      # --- Git config (chỉ cho session này) ---
+                      git config --global user.email "lehoangtrongcsgl@gmail.com"
+                      git config --global user.name "lehoangtrong"
+
+                      # --- Clone nếu chưa có, nếu có thì update ---
+                      if [ ! -d "$APP_DIR/.git" ]; then
+                        echo "Repo not found. Cloning..."
+                        git clone --depth 1 "$REPO_URL" "$APP_DIR"
+                      fi
+
+                      cd "$APP_DIR"
+
+                      git restore .
+
+                      # Đảm bảo remote origin đúng URL (ẩn token trong output)
+                      git remote set-url origin "$REPO_URL" >/dev/null 2>&1
+
+                      # Reset sạch và cập nhật main
+                      git fetch origin main --prune
+                      git checkout -B main origin/main
+                      git reset --hard origin/main
+
+                      # --- Docker compose up (hỗ trợ cả docker-compose và docker compose) ---
+                      if command -v docker-compose >/dev/null 2>&1; then
+                        DC="docker-compose"
+                      else
+                        DC="docker compose"
+                      fi
+
+                      # Option 1: rebuild toàn bộ stack
+                      $DC down
+                      $DC up -d --build
