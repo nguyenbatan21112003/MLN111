@@ -15,39 +15,39 @@ if (typeof window !== "undefined") {
 
 const timelineData = [
   {
-    year: "Trước 1911",
-    title: "Thời kỳ trước năm 1911",
-    slug: "thoi-ky-truoc-nam-1911", // Thêm slug cho routing
+    year: "Mục 1",
+    title: "Bản chất của con người và vai trò của lao động",
+    slug: "ban-chat-con-nguoi-va-lao-dong",
     description:
-      "Hình thành tư tưởng yêu nước và có chí hướng tìm con đường cứu nước mới",
+      "Khám phá quan niệm triết học về bản chất con người và vai trò quyết định của lao động trong sự hình thành chân giá trị.",
   },
   {
-    year: "1911 - 1920",
-    title: "Thời kỳ năm 1911 đến 1920",
-    slug: "thoi-ky-nam-1911-den-1920", // Thêm slug cho routing
+    year: "Mục 2",
+    title: "Hiện tượng tha hóa con người và tha hóa lao động",
+    slug: "tha-hoa-con-nguoi-va-lao-dong",
     description:
-      "Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+      "Phân tích sự tha hóa của lao động trong xã hội tư bản và hệ quả đối với sự phát triển tự nhiên của con người.",
   },
   {
-    year: "1920 - 1930",
-    title: "Thời kỳ năm 1920 đến 1930",
-    slug: "thoi-ky-nam-1920-den-1930", // Thêm slug cho routing
+    year: "Mục 3",
+    title: "Vấn đề giải phóng con người",
+    slug: "giai-phong-con-nguoi",
     description:
-      "Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam",
+      "Mục tiêu cốt lõi của triết học Marx-Lenin trong việc xóa bỏ áp bức và hướng tới sự tự do hoàn toàn.",
   },
   {
-    year: "1930 - 1941",
-    title: "Thời kỳ năm 1930 đến 1941",
-    slug: "thoi-ky-nam-1930-den-1941", // Thêm slug cho routing
+    year: "Mục 4",
+    title: 'Lập luận "Đi làm để sống"',
+    slug: "di-lam-de-song",
     description:
-      'Vượt qua thử thách, giữ vững đường lối, phương pháp cách mạng Việt Nam đúng đắn, sáng tạo',
+      "Góc nhìn về lao động như một phương tiện tất yếu để duy trì sự tồn tại và đáp ứng các nhu cầu thiết yếu.",
   },
   {
-    year: "1941 - 1969",
-    title: "Thời kỳ năm 1941 đến 1969",
-    slug: "thoi-ky-nam-1941-den-1969", // Thêm slug cho routing
+    year: "Mục 5",
+    title: 'Lập luận "Sống để đi làm"',
+    slug: "song-de-di-lam",
     description:
-      "Tư tưởng Hồ Chí Minh tiếp tục phát triển, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta",
+      "Lao động như một nhu cầu tự thân, là nơi con người tìm thấy ý nghĩa cuộc sống và khẳng định giá trị bản thân.",
   },
 ];
 
@@ -273,7 +273,7 @@ export default function HoChiMinhTimeline() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 hero-bg"
             style={{
-              backgroundImage: "url('/image/header.png')",
+              backgroundImage: "url('/image/header_mac_lenin.png')",
               backgroundPosition: "center center",
               backgroundSize: "cover",
             }}
@@ -301,12 +301,12 @@ export default function HoChiMinhTimeline() {
             <h1 className="hero-title text-7xl md:text-9xl lg:text-[10rem] font-black mb-8 text-balance leading-[0.85] tracking-tight font-crimson-pro">
               <div className="title-line">
                 <span className="text-red-600 drop-shadow-2xl text-center inline-block font-bold">
-                  DẤU CHÂN
+                  TRIẾT HỌC
                 </span>
               </div>
               <div className="title-line mt-4">
-                <span className="text-yellow-400 drop-shadow-2xl inline-block font-bold">
-                  LỊCH SỬ
+                <span className="text-yellow-400 drop-shadow-2xl inline-block font-bold uppercase">
+                  Marx-Lenin
                 </span>
               </div>
             </h1>
@@ -314,7 +314,7 @@ export default function HoChiMinhTimeline() {
 
           <div className="max-w-4xl mx-auto">
             <p className="hero-quote text-2xl md:text-3xl text-yellow-200 mb-6 text-pretty font-crimson leading-relaxed italic drop-shadow-lg font-normal">
-              "Từ dấu chân người đến dấu ấn thời đại"
+              "Ngọn đuốc soi đường cho sự nghiệp cách mạng"
             </p>
           </div>
         </div>
@@ -329,12 +329,12 @@ export default function HoChiMinhTimeline() {
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Timeline Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 font-crimson-pro">
-              Hành Trình Lịch Sử
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-crimson-pro italic">
+              Làm việc để sống hay sống để làm việc?
             </h2>
-            <p className="text-lg md:text-xl text-yellow-200 max-w-3xl mx-auto">
-              Những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh
-            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-200 mb-4 font-crimson-pro italic">
+              Đời sống minh triết là gì?
+            </h2>
           </div>
 
           {/* Desktop Timeline Line */}

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Inter, Crimson_Text} from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Playfair_Display,
+  Inter,
+  Crimson_Text,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,7 +27,7 @@ const playfairDisplay = Playfair_Display({
 
 // Font hiện đại cho body text
 const inter = Inter({
-  variable: "--font-inter", 
+  variable: "--font-inter",
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -35,38 +41,42 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Dấu Chân Lịch Sử",
-  description: "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
-  keywords: "Hồ Chí Minh, Bác Hồ, lịch sử Việt Nam, cách mạng, độc lập, timeline, cuộc đời Hồ Chí Minh, tư tưởng Hồ Chí Minh",
+  title: "Triết Học Mác-Lênin",
+  description:
+    "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
+  keywords:
+    "Hồ Chí Minh, Bác Hồ, lịch sử Việt Nam, cách mạng, độc lập, timeline, cuộc đời Hồ Chí Minh, tư tưởng Hồ Chí Minh",
   authors: [{ name: "AIZY" }],
   icons: {
     icon: "/image/logo.png",
     // shortcut: "/logo.png",
     // apple: "/logo.png",
   },
-  creator: "Dấu Chân Lịch Sử",
-  publisher: "Dấu Chân Lịch Sử",
+  creator: "Triết Học Mác-Lênin",
+  publisher: "Triết Học Mác-Lênin",
   openGraph: {
-    title: "Dấu Chân Lịch Sử",
-    description: "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
+    title: "Triết Học Mác-Lênin",
+    description:
+      "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
     url: "https://dauchanlichsu.aizy.vn",
     images: [
       {
-        url: "/image/header.png",
+        url: "/image/header_mac_lenin.png",
         width: 1200,
         height: 630,
-        alt: "Dấu Chân Lịch Sử",
+        alt: "Triết Học Marx-Lenin",
         type: "image/png",
       },
     ],
     type: "website",
     locale: "vi_VN",
-    siteName: "Dấu Chân Lịch Sử",
+    siteName: "Triết Học Mác-Lênin",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dấu Chân Lịch Sử",
-    description: "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
+    title: "DTriết Học Mác-Lênin",
+    description:
+      "Khám phá những dấu mốc quan trọng trong quá trình hình thành tư tưởng Hồ Chí Minh",
   },
   robots: {
     index: true,

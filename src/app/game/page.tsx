@@ -6,10 +6,10 @@ import { ArrowLeft, Clock, Trophy, Star } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/image/header.png",
-    alt: "Cuộc đời Hồ Chí Minh - Giai đoạn đầu",
-    label: "Tuổi thơ và tìm đường cứu nước",
-    file: "header.png",
+    src: "/image/header_mac_lenin.png",
+    alt: "Triết học Mác-Lênin - Khởi đầu",
+    label: "Sự ra đời của chủ nghĩa Mác-Lênin",
+    file: "header_mac_lenin.png",
     difficulty: "Dễ",
     pieces: "12 mảnh",
     period: "1890-1920",

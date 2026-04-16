@@ -16,8 +16,8 @@ interface PuzzlePiece {
 
 // Description cho từng hình
 const imageDescriptions: Record<string, string> = {
-  "header.png":
-    "Đây là hình ảnh phần header của website, thể hiện chủ đề chính và màu sắc đặc trưng.",
+  "header_mac_lenin.png":
+    "Đây là hình ảnh đại diện cho Triết học Mác-Lênin, thể hiện tư tưởng chủ đạo của dự án.",
   "body.png": "Đây là hình ảnh phần body, nơi chứa nội dung chính của trang.",
   "hinh2.png":
     "Đây là hình minh họa số 2, dùng để trang trí hoặc làm ví dụ cho game.",
@@ -31,7 +31,7 @@ export default function PuzzleGame() {
       ? params.img
       : Array.isArray(params.img)
       ? params.img[0]
-      : "header.png";
+      : "header_mac_lenin.png";
   const imgUrl = `/image/${img}`;
   const description =
     imageDescriptions[img] || "Hình ảnh mô tả cho game xếp hình.";
