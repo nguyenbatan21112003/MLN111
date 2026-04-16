@@ -151,7 +151,7 @@ const timelineData: TimelineEvent[] = [
             Trong chế độ tư hữu tư liệu sản xuất, người lao động không còn làm việc
             như một hoạt động tự nguyện để sáng tạo ra đời sống của chính mình,
             mà lao động trở thành sự cưỡng bức nhằm duy trì sự tồn tại thể xác.
-            Vì không sở hữu tư liệu sản xuất, con người phải “đi làm để sống”, chứ
+            Vì không sở hữu tư liệu sản xuất, con người phải "đi làm để sống", chứ
             không phải làm để thể hiện bản chất người; do đó lao động dễ trở thành
             gánh nặng.
           </>
@@ -173,13 +173,19 @@ const timelineData: TimelineEvent[] = [
         content: (
           <>
             <strong>Tha hóa quá trình lao động:</strong> Người lao động không còn cảm
-            thấy lao động là “việc của mình” (đúng với chức năng người), mà chủ yếu
+            thấy lao động là "việc của mình" (đúng với chức năng người), mà chủ yếu
             chỉ thấy mình tồn tại qua các nhu cầu sinh học. Khi lao động, con người
             dường như chỉ còn là một phần phụ thuộc làm theo mệnh lệnh của quá
             trình sản xuất, nên lao động mang tính cưỡng bức và tước đi sự tự do
             bản chất.
           </>
         ),
+      },
+      {
+        type: "image",
+        src: "/image/unemployed-workers.jpg",
+        alt: "Hàng người thất nghiệp xếp hàng chờ thức ăn thời Đại Khủng Hoảng 1931",
+        caption: "Hàng người thất nghiệp xếp hàng chờ thức ăn thời Đại Khủng Hoảng, Chicago 1931 — minh chứng cho sự tha hóa sản phẩm lao động",
       },
       {
         type: "paragraph",
@@ -205,6 +211,12 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/marx-old.jpg",
+        alt: "Chân dung Karl Marx",
+        caption: "Karl Marx (1818–1883) — người đặt nền móng lý luận về tha hóa lao động trong tác phẩm Bản thảo Kinh tế – Triết học 1844",
+      },
+      {
         type: "paragraph",
         content: (
           <>
@@ -216,7 +228,11 @@ const timelineData: TimelineEvent[] = [
         ),
       },
     ],
-    images: ["/image/body.png"],
+    images: [
+      "/image/alienated-labor.jpg",
+      "/image/unemployed-workers.jpg",
+      "/image/marx-old.jpg",
+    ],
   },
   {
     year: "Mục 3",
@@ -243,7 +259,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content: (
           <>
-            Thực chất của giải phóng con người là “trả con người về với chính mình”,
+            Thực chất của giải phóng con người là "trả con người về với chính mình",
             tức là xóa bỏ sự lệ thuộc vào các thế lực vật chất và xã hội xa lạ.
             Lao động không còn là gánh nặng cưỡng bức mà trở thành hoạt động
             sáng tạo tự giác, mang lại niềm vui và ý nghĩa. Đây là sự giải phóng
@@ -266,6 +282,12 @@ const timelineData: TimelineEvent[] = [
         content:
           "Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người",
         author: "Karl Marx và Friedrich Engels",
+      },
+      {
+        type: "image",
+        src: "/image/marx-portrait.jpg",
+        alt: "Chân dung Karl Marx",
+        caption: "Karl Marx (1818–1883) — người đặt nền móng lý luận về giải phóng con người khỏi sự tha hóa",
       },
       {
         type: "paragraph",
@@ -311,8 +333,18 @@ const timelineData: TimelineEvent[] = [
           </>
         ),
       },
+      {
+        type: "image",
+        src: "/image/wanderer-fog.jpg",
+        alt: "Wanderer above the Sea of Fog - Caspar David Friedrich",
+        caption: "Wanderer above the Sea of Fog (Caspar David Friedrich, 1818) — con người tự do đứng trên đỉnh cao nhìn về chân trời mở, biểu tượng của sự giải phóng và làm chủ vận mệnh",
+      },
     ],
-    images: ["/image/body.png"],
+    images: [
+      "/image/wanderer-fog.jpg",
+      "/image/marx-portrait.jpg",
+      "/image/industrial-work.jpg",
+    ],
   },
   {
     year: "Mục 4",
@@ -328,8 +360,8 @@ const timelineData: TimelineEvent[] = [
             <strong>Theo Karl Marx</strong>, trong xã hội tư hữu tư liệu sản xuất,
             người lao động không sở hữu tư liệu sản xuất nên buộc phải bán sức
             lao động để tồn tại. Vì vậy, lao động vốn là hoạt động sáng tạo tự
-            do của con người bị biến thành phương tiện sinh tồn, tức “đi làm để
-            sống” thay vì lao động như một nhu cầu tự do.
+            do của con người bị biến thành phương tiện sinh tồn, tức "đi làm để
+            sống" thay vì lao động như một nhu cầu tự do.
           </>
         ),
       },
@@ -348,11 +380,17 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/alienated-labor.jpg",
+        alt: "Công nhân vận hành máy bơm hơi nước - Lewis Hine 1920",
+        caption: "Công nhân vận hành máy bơm hơi nước (Lewis Hine, 1920) — hình ảnh người lao động gắn chặt với máy móc, mất dần bản chất sáng tạo",
+      },
+      {
         type: "paragraph",
         content: (
           <>
-            Thực tiễn cũng phản ánh điều này qua áp lực “cơm áo gạo tiền”, hiện
-            tượng “quiet quitting” và tình trạng burnout, stress do làm việc quá
+            Thực tiễn cũng phản ánh điều này qua áp lực "cơm áo gạo tiền", hiện
+            tượng "quiet quitting" và tình trạng burnout, stress do làm việc quá
             sức. Từ đó, có thể thấy người lao động chỉ duy trì công việc ở mức cần
             thiết để tồn tại hơn là gắn bó với ý nghĩa công việc. Những thực
             tiễn này có thể được mô tả chi tiết:
@@ -363,7 +401,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content: (
           <>
-            <strong>Áp lực “cơm áo gạo tiền”:</strong> Người lao động buộc phải đi làm
+            <strong>Áp lực "cơm áo gạo tiền":</strong> Người lao động buộc phải đi làm
             để duy trì thu nhập phục vụ các nhu cầu cơ bản (ăn, ở, y tế, giáo dục),
             kể cả khi công việc không phù hợp → lao động trở thành nghĩa vụ sinh
             tồn, không còn là lựa chọn tự do.
@@ -374,7 +412,7 @@ const timelineData: TimelineEvent[] = [
         type: "paragraph",
         content: (
           <>
-            <strong>“Quiet quitting”:</strong> Người lao động chỉ làm đúng phần việc
+            <strong>"Quiet quitting":</strong> Người lao động chỉ làm đúng phần việc
             tối thiểu, không chủ động hay sáng tạo → thể hiện sự tách rời khỏi
             công việc, coi lao động chỉ là công cụ kiếm sống, không còn ý nghĩa cá
             nhân.
@@ -386,7 +424,7 @@ const timelineData: TimelineEvent[] = [
         content: (
           <>
             <strong>Dữ liệu tham khảo:</strong> <a href="https://vnexpress.net/nhung-xu-huong-cua-gioi-tre-anh-huong-toi-tuong-lai-viec-lam-4787695.html" target="_blank" rel="noreferrer">VnExpress (2024-2025)</a>{" "}
-            cho thấy xu hướng làm việc theo hướng “tối thiểu - cân bằng” đang tăng lên. Báo cáo thị trường lao động 2024 (từ{" "}
+            cho thấy xu hướng làm việc theo hướng "tối thiểu - cân bằng" đang tăng lên. Báo cáo thị trường lao động 2024 (từ{" "}
             <a href="https://english.news.cn/20231214/ad7a4ae0e3d24b38b706540ddbe82027/c.html" target="_blank" rel="noreferrer">Xinhua</a>) cũng nêu{" "}
             <strong>35%</strong> người lao động sẵn sàng nghỉ việc nếu mất cân bằng work-life.
           </>
@@ -401,6 +439,12 @@ const timelineData: TimelineEvent[] = [
             gánh nặng thay vì phương tiện phát triển bản thân.
           </>
         ),
+      },
+      {
+        type: "image",
+        src: "/image/worker-survival.jpg",
+        alt: "Hình ảnh người lao động trong áp lực sinh tồn",
+        caption: "Người lao động trong vòng quay sinh tồn — lao động không còn là sự sáng tạo tự do mà trở thành nghĩa vụ tất yếu",
       },
       {
         type: "paragraph",
@@ -419,14 +463,18 @@ const timelineData: TimelineEvent[] = [
           <>
             <strong>
               Kết luận: trong điều kiện kinh tế hiện đại với tư hữu tư liệu sản xuất
-              và áp lực sinh tồn, lao động vẫn mang tính tha hóa, và “đi làm để
-              sống” là một tất yếu xã hội hơn là lựa chọn tự do cá nhân.
+              và áp lực sinh tồn, lao động vẫn mang tính tha hóa, và "đi làm để
+              sống" là một tất yếu xã hội hơn là lựa chọn tự do cá nhân.
             </strong>
           </>
         ),
       },
     ],
-    images: ["/image/body.png"],
+    images: [
+      "/image/worker-survival.jpg",
+      "/image/alienated-labor.jpg",
+      "/image/industrial-work.jpg",
+    ],
   },
   {
     year: "Mục 5",
@@ -467,6 +515,12 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/renoir-luncheon.jpg",
+        alt: "Luncheon of the Boating Party - Renoir 1881",
+        caption: "Luncheon of the Boating Party (Renoir, 1881) — hình ảnh con người tự do, sống và làm việc trong niềm vui và sự gắn kết cộng đồng",
+      },
+      {
         type: "paragraph",
         content: (
           <>
@@ -490,19 +544,29 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/creative-work.jpg",
+        alt: "Lao động sáng tạo và tự do",
+        caption: "Khi lao động trở thành niềm đam mê — con người không còn làm việc vì sinh tồn mà vì sự tự khẳng định bản thân",
+      },
+      {
         type: "paragraph",
         content: (
           <>
             <strong>
               Kết luận, khi lao động được giải phóng khỏi tha hóa, nó không còn là gánh nặng mà trở
-              thành nhu cầu tự thân. Khi đó, “sống để làm việc” chính là cách con người khẳng định bản chất
+              thành nhu cầu tự thân. Khi đó, "sống để làm việc" chính là cách con người khẳng định bản chất
               sáng tạo và ý nghĩa tồn tại của mình.
             </strong>
           </>
         ),
       },
     ],
-    images: ["/image/body.png"],
+    images: [
+      "/image/starry-night.jpg",
+      "/image/renoir-luncheon.jpg",
+      "/image/creative-work.jpg",
+    ],
   },
   {
     year: "Mục 6",
@@ -779,6 +843,23 @@ export default function TimelineDetail() {
                           {item.author}
                         </span>
                       </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (item.type === "image") {
+                return (
+                  <div key={index} className="my-10 rounded-2xl overflow-hidden shadow-xl">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full h-80 object-cover"
+                    />
+                    {item.caption && (
+                      <p className="text-center text-sm text-slate-500 italic mt-3 px-4 pb-3">
+                        {item.caption}
+                      </p>
                     )}
                   </div>
                 );
