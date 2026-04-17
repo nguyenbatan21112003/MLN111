@@ -611,6 +611,12 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/worker-survival.jpg",
+        alt: "Người lao động trong áp lực công việc hiện đại",
+        caption: "Áp lực 'cơm áo gạo tiền' và quiet quitting — biểu hiện của tha hóa lao động trong xã hội hiện đại",
+      },
+      {
         type: "paragraph",
         content: (
           <>
@@ -637,12 +643,18 @@ const timelineData: TimelineEvent[] = [
         ),
       },
       {
+        type: "image",
+        src: "/image/creative-work.jpg",
+        alt: "Lao động sáng tạo và tự do của Gen Z",
+        caption: "Gen Z lao động vì đam mê và giá trị cá nhân — khát vọng biến lao động thành sự tự do sáng tạo",
+      },
+      {
         type: "quote",
         content: "Lao động phải là một hoạt động tự do, chứ không phải là một sự cưỡng bức.",
         author: "Karl Marx",
       },
     ],
-    images: ["/image/body.png"],
+    images: ["/image/industrial-work.jpg"],
   },
   {
     year: "Mục 7",
@@ -667,6 +679,12 @@ const timelineData: TimelineEvent[] = [
         type: "quote",
         content: "Trong tính hiện thực của nó, bản chất con người là tổng hòa các quan hệ xã hội.",
         author: "Karl Marx",
+      },
+      {
+        type: "image",
+        src: "/image/labor-evolution.png",
+        alt: "Lao động và sự phát triển của con người qua lịch sử",
+        caption: "Lao động là nền tảng hình thành bản chất con người — từ bản năng sinh tồn đến sáng tạo xã hội",
       },
       {
         type: "paragraph",
@@ -702,6 +720,12 @@ const timelineData: TimelineEvent[] = [
         author: "Karl Marx và Friedrich Engels",
       },
       {
+        type: "image",
+        src: "/image/liberty-painting.jpg",
+        alt: "Biểu tượng tự do và giải phóng con người",
+        caption: "Con đường giải phóng con người — từ tha hóa đến tự do sáng tạo toàn diện trong xã hội không còn áp bức",
+      },
+      {
         type: "paragraph",
         content: (
           <>
@@ -715,7 +739,7 @@ const timelineData: TimelineEvent[] = [
         ),
       },
     ],
-    images: ["/image/body.png"],
+    images: ["/image/marx-portrait.jpg"],
   },
 ];
 

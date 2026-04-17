@@ -86,6 +86,20 @@ export default function ConclusionPage() {
           <span className="text-red-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">
             — LỜI CẢM ƠN —
           </span>
+
+          {/* Gallery ảnh đại diện hành trình */}
+          <div className="flex items-center justify-center gap-3 mb-10">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden border border-yellow-400/20 shadow-lg shadow-black/40">
+              <img src="/image/marx-portrait.jpg" alt="Karl Marx" className="w-full h-full object-cover object-top opacity-80" />
+            </div>
+            <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-yellow-400/40 shadow-xl shadow-black/50">
+              <img src="/image/marx-engels.jpg" alt="Marx và Engels" className="w-full h-full object-cover opacity-85" />
+            </div>
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden border border-yellow-400/20 shadow-lg shadow-black/40">
+              <img src="/image/liberty-painting.jpg" alt="Giải phóng con người" className="w-full h-full object-cover opacity-80" />
+            </div>
+          </div>
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-yellow-100 italic leading-tight font-crimson-pro mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
             "Cảm ơn thầy và các bạn đã lắng nghe"
           </h1>
